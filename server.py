@@ -4,26 +4,7 @@ from pathlib import Path
 listt = []
 
 def index_page():
-    for k in request.headers.get("X-Forwarded-For"):
-        if k not in [listt[i][0] for i in range(0, len(listt))]:
-            listt.append([k, 0])
-        else:
-            for i in listt:
-                if i[0] == k:
-                    i[1] += 1
-                    break
-    ipContent = ""
-    for i in listt:
-        current_ip_content = """
-        <tr>
-            <td>%(ipNumber)s</td>
-            <td>%(count)s</td>
-        </tr>
-        """ % {
-            "ipNumber": str(i[0]),
-            "count": str(i[1])
-        }
-        ipContent = ipContent + current_ip_content
+    ipContent = "XDDDDDDD"
     return Path("index.html").read_text() % {"ipInformation": ipContent}
 
 def mySkills_page():
