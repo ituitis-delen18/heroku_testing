@@ -1,0 +1,66 @@
+@font-face {
+  font-family: CustomFont;
+  src: url("/static/Vanilla Twilight.otf");
+}
+@font-face {
+  font-family: header_font;
+  src: url("/static/PaytoneOne-Regular.ttf");
+}
+
+.Home{
+  font-family: CustomFont;
+  color: black;
+  text-decoration: none;
+  float: left;
+  border-style: solid;
+  padding: 5px;
+  border-width: 3px;
+  border-color: black;
+  margin:5px 10px;
+
+}
+.Home:hover {
+  color: white;
+  background-color: black;
+}
+.socials{
+  margin: 5px 5px;
+}
+.content_div{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+body{
+  width: inherit;
+  height: inherit;
+}
+
+.languages{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.languages > div {
+  border-style: double;
+  border-width: 3px;
+  border-color: black;
+  margin-bottom: 10px;
+  padding: 7px;
+}
+
+.languages > div > div > h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.info{
+  font-size: 15px;
+  text-indent: 15px;
+  font-family: monospace;
+}
+
+.programming_language_images{
+  padding: 10px;
+  width: 10%;
+  float: left;
+}
