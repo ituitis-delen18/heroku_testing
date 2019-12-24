@@ -1,4 +1,4 @@
-from bottle import Bottle, request, static_file
+from bottle import Bottle, request
 
 def index_page():
     return "Hello WOrld"
