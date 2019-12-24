@@ -4,8 +4,7 @@ from pathlib import Path
 listt = []
 
 def index_page():
-    ipContent = "XDDDDDDD"
-    return Path("index.html").read_text() % {"ipInformation": ipContent}
+    return Path("index.html").read_text()
 
 def mySkills_page():
     return Path("mySkills.html").read_text()
